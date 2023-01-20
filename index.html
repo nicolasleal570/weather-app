@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather app</title>
+  </head>
+
+  <body>
+    <main class="main-box">
+      <h1 class="main-title">Weather app</h1>
+      <p class="main-subtitle">
+        Find a location and inspect how the weather looks like.
+      </p>
+
+      <form id="searchBoxForm" class="search-box">
+        <img src="./search.svg" alt="Search Icon" class="search-icon" />
+        <input
+          type="text"
+          placeholder="Eg. London"
+          name="cityField"
+          id="cityField"
+          class="search-field"
+        />
+        <button type="submit" id="searchButton" class="search-button">
+          Search
+        </button>
+      </form>
+
+      <section id="results" class="results-box hide">
+        <!-- <div class="weather-item">
+          <p class="item-title">City</p>
+          <p class="item-body">London, GB</p>
+        </div> -->
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
